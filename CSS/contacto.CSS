@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "italiana";
+    src: url("../fuentes/Italiana-Regular.ttf");
+}
+
+html, body{
+    background: linear-gradient(#f7dff1 20%, #FFFAFE 80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+
+}
+.nav-contenedor ul li a{
+
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #dcdbdb;
+    padding: 15px;
+    border-radius: 60px;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-contenedor ul li{
+
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-contenedor ul{
+
+    display: flex;
+}
+
+header {
+    font-family: "italiana";
+    
+}
+
+.contenedor-sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-imagen-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-imagen {
+    margin-top: 20px;
+}
+
+.contenedor-imagen img {
+    max-width: 195px; 
+    height: auto; 
+    border-radius: 40px;
+}
+
+.contenedor-texto {
+    margin-top: 10px; 
+}
+
+.titulo-sobremi {
+    text-align: center;
+    border-radius: 60px;
+    padding: 15px 250px;
+    font-family: "italiana";
+    src: url("../fuentes/Italiana-Regular.ttf");
+    border-bottom: 2px solid #ccc;
+}
+
+.texto-centro {
+    text-align: center;
+    max-width: 1000px; 
+    font-size: 20px;
+}
+
+.titulo-centro{
+    background: #dcdbdb;
+    text-align: center;
+    border-radius: 60px;
+    padding: 15px 250px;
+    font-family: "italiana";
+    src: url("../fuentes/Italiana-Regular.ttf");
+
+}
+.footer {
+     background: linear-gradient(#f7dff1 20%, #FFFAFE 80%);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icono {
+    color:  #dcdbdb;
+    font-size: 35px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Limita el ancho del formulario */
+    margin: 50px auto; /* Centra el formulario */
+    padding: 20px;
+    background-color: #dcdbdb; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para las etiquetas (labels) */
+.formulario-contacto label {
+    font-size: 16px; /* Tamaño de texto adecuado */
+    font-weight: 600; /* Hace el texto un poco más grueso */
+    margin-bottom: 8px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para los inputs de texto y email */
+.input-text {
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado externo debajo del input */
+    font-size: 16px; /* Tamaño del texto dentro del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño del input */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    transition: border-color 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Estilo para el textarea */
+.input-textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    min-height: 150px; /* Altura mínima */
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+.boton-enviar {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: #f7dff1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #d76db7;
+}
+
+.input-text:focus, .input-textarea:focus {
+    border-color: #d76db7; /* Color verde al hacer foco */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Adaptación a pantallas más pequeñas */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        padding: 15px;
+    }
+
+    .input-text, .input-textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .boton-enviar {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .titulo-centro, .titulo-sobremi {
+        padding: 15px 40px;
+    }
+
+    .texto-centro {
+        font-size: 18px;
+    }
+
+    .contenedor-imagen img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-contenedor ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-contenedor ul li {
+        margin-bottom: 10px;
+    }
+
+    .contenedor-imagen img {
+        max-width: 150px;
+    }
+
+    .texto-centro {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-centro, .titulo-sobremi {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .texto-centro {
+        font-size: 14px;
+    }
+
+    .icono {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .titulo-centro, .titulo-sobremi {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .contenedor-imagen img {
+        max-width: 120px;
+    }
+
+    .texto-centro {
+        font-size: 12px;
+    }
+
+    .icono {
+        font-size: 20px;
+    }
+}
